@@ -1,1 +1,317 @@
 @import url(./reset.css);
+
+body {
+    background-color: #F99874;
+    font-family: 'Roboto Mono', sans-serif;
+    //background-image: url(./img/malala-header.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    //text-align: center;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bgimg {
+    position: fixed;
+    left: 20%;
+    z-index: -99;
+}
+.em {
+    font-style: italic;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.hide {
+    display:none;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin: 5em auto;
+}
+
+h2 {
+    font-size: 1.8em;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 20px 0 50px 0;
+    line-height: 1.5;   
+}
+
+h4 {
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    line-height: 1.3;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+
+.vertleft {
+    position:absolute;
+    top:150px;
+    color: darkslategray;
+}
+
+.vertright {
+    position:absolute;
+    top:180px;
+    right:-120px;
+    color: darkslategrey;
+}
+
+
+header {
+    padding: 10px;
+    text-align: center;
+    border: 15px solid #80CAD1;
+}
+
+
+
+.container1 {
+    background-color: #F99874;
+    background-image: url(./img/swat.png);
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 100px 0 200px 0;
+    }
+
+.highlight1 {
+   background-color: #F99874;
+}
+.container2 {
+    background: #A9D5AE;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.container2 img {
+    width:80%;
+    max-width: 500px;
+    margin-bottom:50px;
+}
+
+.container3 {
+    background: #80CAD1;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.container3 img {
+    width:70%;
+    max-width: 500px;
+    margin-top:50px;
+}
+
+.container4 {
+    background: #E7C2AB;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.container4 img {
+    width:70%;
+    max-width: 600px;
+    margin-bottom:50px;
+}
+
+.container5 {
+    background: #EDB563;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.container5 img {
+    width:50%;
+    max-width: 400px;
+    margin-bottom:50px;
+}
+
+.bio {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 10px solid white;
+    padding: 10%;
+   
+}
+
+.bio p, .bio h2 {
+    text-align: left;
+}
+
+
+
+.bio p {
+    margin: 20px 0;
+}
+
+nav {
+    text-align: center;
+    background-color: #80CAD1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10%;
+}
+
+header img {
+    z-index: -99;
+    position: fixed;
+    top: 10px;
+    left: 35%;
+    margin: 0
+}
+
+aside {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.8em;
+    margin: 100px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.speech {
+    background-color: #80CAD1;
+    //background-image: url(./img/swat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+}
+
+.speech p {
+    max-width: 600px;
+    margin: 15px auto;
+    
+    
+}
+
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(90deg);
+
+/* Firefox */
+-moz-transform: rotate(90deg);
+
+/* IE */
+-ms-transform: rotate(90deg);
+
+/* Opera */
+-o-transform: rotate(90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+transform-origin: 10% -100%;
+}
+
+.blockquote {
+    font-size: 1.8em;
+    margin: 30px auto;
+    line-height: 1.5;
+    color: white;
+    max-width: 700px;
+    text-align: center;
+    
+}
+
+.video {
+    background-color: white;   
+    padding: 100px 0;
+    border: 20px solid #F99874;
+}
+
+
+footer {
+    text-align: center;
+    padding: 50px 0;
+    
+}
+
+footer img {
+    max-width: 40px;
+    margin-bottom: 10px;
+}
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    //flex-direction: column;
+    font-family: 'Roboto Mono', sans-serif;
+    text-transform: uppercase;
+    
+}
+
+li {
+    flex: 1;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+    color: darkslategrey;
+}
+
+@media (max-width:750px) {
+    .video {
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    .bio {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+   }
+   
+   .bio p, .bio h2 {
+       text-align: center;
+   }
+   
+   .bio img {
+       margin: 0;
+   }
+}
