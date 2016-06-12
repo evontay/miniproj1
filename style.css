@@ -3,10 +3,10 @@
 body {
     background-color: #F99874;
     font-family: 'Roboto Mono', sans-serif;
-    //background-image: url(./img/malala-header.png);
+    /*background-image: url(./img/malala-header.png);*/
     background-position: center top;
     background-repeat: no-repeat;
-    //text-align: center;
+    /*text-align: center;*/
     
 }
 
@@ -84,14 +84,32 @@ p {
 .vertleft {
     position:absolute;
     top:150px;
+    margin-left: 10px;
     color: darkslategray;
 }
 
 .vertright {
-    position:absolute;
-    top:180px;
-    right:-120px;
+    position:fixed;
+    top:170px;
+    right:20px;
     color: darkslategrey;
+}
+
+/*#radionav ul {
+    display: inline;
+}*/
+
+#radionav li {
+    border-radius: 50%;
+    border: darkslategray solid 2px;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+
+}
+
+#radionav li:hover, #radionav li:active {
+    background-color: white;
 }
 
 
@@ -103,7 +121,7 @@ header {
 
 
 
-.container1 {
+#container1 {
     background-color: #F99874;
     background-image: url(./img/swat.png);
     background-position: center bottom;
@@ -115,49 +133,49 @@ header {
 .highlight1 {
    background-color: #F99874;
 }
-.container2 {
+#container2 {
     background: #A9D5AE;
     padding: 100px 0;
     text-align: center;
 }
 
-.container2 img {
+#container2 img {
     width:80%;
     max-width: 500px;
     margin-bottom:50px;
 }
 
-.container3 {
+#container3 {
     background: #80CAD1;
     padding: 100px 0;
     text-align: center;
 }
 
-.container3 img {
+#container3 img {
     width:70%;
     max-width: 500px;
     margin-top:50px;
 }
 
-.container4 {
+#container4 {
     background: #E7C2AB;
     padding: 100px 0;
     text-align: center;
 }
 
-.container4 img {
+#container4 img {
     width:70%;
     max-width: 600px;
     margin-bottom:50px;
 }
 
-.container5 {
+#container5 {
     background: #EDB563;
     padding: 100px 0;
     text-align: center;
 }
 
-.container5 img {
+#container5 img {
     width:50%;
     max-width: 400px;
     margin-bottom:50px;
@@ -213,9 +231,9 @@ aside {
     text-align: center;
 }
 
-.speech {
+/*.speech {
     background-color: #80CAD1;
-    //background-image: url(./img/swat.png);
+    background-image: url(./img/swat.png)
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0px;
@@ -226,7 +244,7 @@ aside {
     margin: 15px auto;
     
     
-}
+}*/
 
 .rotate {
 
@@ -278,7 +296,7 @@ footer img {
 footer ul {
     display: flex;
     flex-wrap: wrap;
-    //flex-direction: column;
+    /*flex-direction: column;*/
     font-family: 'Roboto Mono', sans-serif;
     text-transform: uppercase;
     
