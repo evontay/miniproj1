@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Mini Project 1: Malala</title>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script defer src="./miniproj.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300italic,300,400italic,500,500italic,700,700italic,100italic,100' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width">
+    <script>
+        $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html, body').animate({
+                scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+            }
+        });
+        });
+    </script>
 </head>
 <body>
     <div class="bgimg">
@@ -17,7 +35,7 @@
         <h4 class="rotate vertleft">1997 - Present (age 18)</h4>
         <h1>Malala Yousafzai</h1>
         <h4 class="rotate vertright">
-            Swat, Pakistan
+            <a id="#container1">1997</a>
         </h4>
         
         <h4>Youngest-ever Nobel Prize Laureate</h4>

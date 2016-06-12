@@ -16,8 +16,14 @@ body {
 
 .bgimg {
     position: fixed;
-    left: 20%;
+    /*left: 20%;*/
+    width: 100%;
     z-index: -99;
+}
+
+.bgimg img {
+    display: block;
+    margin: 0 auto;
 }
 .em {
     font-style: italic;
@@ -193,10 +199,10 @@ nav ul li {
 
 header img {
     z-index: -99;
-    position: fixed;
-    top: 10px;
-    left: 35%;
-    margin: 0
+    /*position: fixed;*/
+    /*top: 10px;*/
+    /*left: 35%;*/
+    margin: 0 auto;
 }
 
 aside {
