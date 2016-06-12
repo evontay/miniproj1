@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Mini Project 1: Malala</title>
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script defer src="./miniproj.js"></script>
+    
+    
     <link rel="stylesheet" href="./style.css">
+    
     <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300italic,300,400italic,500,500italic,700,700italic,100italic,100' rel='stylesheet' type='text/css'>
+    
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+    
     <meta name="viewport" content="width=device-width">
-    <!--<script>
-        $(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                $('html, body').animate({
-                scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-            }
-        });
-        });
-    </script>-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+    console.log("script is running")
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+    
 </head>
 <body>
     <div class="bgimg">
@@ -49,7 +56,7 @@
     
     
     
-    <article id="container1">
+    <div id="container1">
         <div class="bio">
         <h2>1997</h2>
         <h3 class="highlight1">Growing up in Swat Valley</h3>
@@ -57,9 +64,9 @@
 
         <p class="highlight1">Ziauddin, who has always loved learning, ran a school in Swat adjacent to the family's home. He was known as an advocate for education in Pakistan, which has the second highest number of out of school children in the world, and became an outspoken opponent of Taliban efforts to restrict education and stop girls from going to school.</p>
         </div>
-    </article>
+    </div>
     
-    <article id="container2">
+    <div id="container2">
         <div class="bio">
         <h2>2009</h2>
         <h3>Becoming an Education Activist</h3>
@@ -68,9 +75,9 @@
 
         <p>Malala and her father received death threats but continued to speak out for the right to education. Around this time, Malala was featured in a documentary made for The New York Times and was revealed as the author of the BBC blog.</p>
         </div>
-    </article>
+    </div>
     
-    <article id="container3">
+    <div id="container3">
         <div class="bio">
            <h2> 2011</h2> 
            <h3>Awarded Pakistan's First <br>National Youth Peace Prize</h3>
@@ -79,25 +86,25 @@
            <p>In response to her rising popularity and national recognition, Taliban leaders voted to kill her.</p>
            <img class="center" src="./img/guns.png"/>
         </div>
-    </article>
+    </div>
     
-    <article id="container4">
+    <div id="container4">
         <div class="bio">
             <h2>2013</h2> 
             <h3>Establishing the Malala Fund</h3>
             <img src="./img/hope.png"/>
             <p>Malala became a global advocate for the millions of girls being denied a formal education because of social, economic, legal and political factors. In 2013, Malala and Ziauddin co-founded the Malala Fund to bring awareness to the social and economic impact of girls' education and to empower girls to raise their voices, to unlock their potential and to demand change.</p>
          </div>
-      </article>
+      </div>
 
-<article id="container5">
+<div id="container5">
         <div class="bio">
             <h2>2014</h2> 
             <h3>Nobel Peace Prize</h3>
             <img src="./img/nobel.png"/>
             <p>Malala accepted the Nobel Peace Prize on 10 December, 2014 with Indian children's rights and education advocate Kailash Satyarthi. Malala contributed her $1.1 million prize money to financing the creation of a secondary school for girls in Pakistan.</p>
         </div>
-    </article>
+    </div>
     
     
     
@@ -123,6 +130,7 @@
             <li><a href="https://www.malala.org/"><img src="./img/geometric.png"/><br>Malala Fund</a></li>
         </ul>
     </footer>
+    
     
 </body>
 </html>

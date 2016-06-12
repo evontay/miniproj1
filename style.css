@@ -317,6 +317,8 @@ a:hover, a:active {
     color: darkslategrey;
 }
 
+
+
 @media (max-width:750px) {
     .video {
         display: none;
@@ -338,4 +340,25 @@ a:hover, a:active {
    .bio img {
        margin: 0;
    }
+}
+
+@media (max-width: 600px){
+    .vertleft, .vertright {display:none;}
+    aside {
+        padding: 20px;
+    }
+    
+    #container1, #container2, #container3, #container4, #container5 {
+        padding: 50px 20px;
+    }
+    
+    br {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    #container1, #container2, #container3, #container4, #container5 {
+        padding: 30px 10px;
+    }
 }
